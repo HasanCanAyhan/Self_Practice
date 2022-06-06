@@ -1,0 +1,80 @@
+package day12_customMethods;
+
+public class MonthName { // Task 3
+
+    public static void main(String[] args) {
+
+
+        int num = 14;
+     monthName(num);
+
+
+    }
+
+    public static void monthName(int num){
+
+
+
+         String result = "";
+
+             switch (num){
+
+                 case 1:
+                     result = "January";
+                     break;
+                 case 2:
+                     result = "February";
+                     break;
+                 case 3:
+                     result = "March";
+                     break;
+                 case 4:
+                     result = "April";
+                     break;
+                 case 5:
+                     result = "May";
+                     break;
+                 case 6:
+                     result = "June";
+                     break;
+                 case 7:
+                     result = "July";
+                     break;
+                 case 8:
+                     result = "August";
+                     break;
+                 case 9:
+                     result = "September";
+                     break;
+                 case 10:
+                     result = "October";
+                     break;
+                 case 11:
+                     result = "November";
+                     break;
+                 case 12:
+                     result = "December";
+                     break;
+                 default:
+                     result = "Invalid Number";
+
+             }
+
+        System.out.println(result);
+
+
+
+    }
+
+
+
+}
+/*
+3. Create a method named monthName that can display the name of the month based on the given number to the method, if the number is invalid, then the method should print the error message "Invalid Number"
+    Ex:
+        monthName(6)
+
+        output:
+            June
+
+ */
