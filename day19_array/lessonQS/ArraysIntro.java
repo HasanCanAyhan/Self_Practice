@@ -16,6 +16,7 @@ public class ArraysIntro {
         numbers[4] = 50;
 
         System.out.println("numbers = " + Arrays.toString(numbers) ); // 10 20 30 40 50
+        System.out.println(numbers.length); // 5
 
         // or:
 
@@ -25,6 +26,11 @@ public class ArraysIntro {
         for (int i = 0; i < numbers.length; i++) { // i : index numbers of scores array
             System.out.println( numbers[i] ); // 10 20 30 40 50
         }
+
+        System.out.println("--------");
+
+
+        System.out.println(numbers[numbers.length -1 ]); // 50 ===>> last index number : 50
 
 
         System.out.println("-----------------------------------------");
