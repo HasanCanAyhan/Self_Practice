@@ -1,4 +1,4 @@
-package day22_arrayList;
+package day22_arrayList.lessonQS;
 
 public class WrapperClassesIntro {
 
