@@ -16,6 +16,7 @@ public class Movie { // Task 4
         this.title = title;
         this.releaseDate = releaseDate;
         this.director = director;
+        casts = new ArrayList<>();
     }
 
     public void addCast(String castMember){
