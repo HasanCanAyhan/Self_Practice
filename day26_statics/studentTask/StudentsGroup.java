@@ -43,7 +43,7 @@ public class StudentsGroup {
 
     public ArrayList<Student> removeStudent(String id){
 
-        students.removeIf(p -> p.id.equals(id));
+        students.removeIf(p -> p.id.equals(id)); // p is student object
         System.out.println(id + " id number of student is removed");
 
         return students;
