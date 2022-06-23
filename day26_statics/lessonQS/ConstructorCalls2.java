@@ -1,4 +1,4 @@
-package day26_statics;
+package day26_statics.lessonQS;
 
 public class ConstructorCalls2 {
 

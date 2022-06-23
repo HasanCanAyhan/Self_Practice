@@ -1,6 +1,4 @@
-package day26_statics.studentTask;
-
-import java.util.Arrays;
+package day26_statics.lessonQS.studentTask;
 
 public class TestObjects {
 
