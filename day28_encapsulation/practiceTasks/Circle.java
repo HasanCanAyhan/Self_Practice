@@ -1,0 +1,68 @@
+package day28_encapsulation.practiceTasks;
+
+public class Circle { // Task 1
+
+    private double radius;
+
+    public static double PI = 3.14;
+
+
+    public Circle(double radius) {
+        setRadius(radius);
+    }
+
+    public double getRadius() {
+        return radius;
+    }
+
+    public void setRadius(double radius) {
+
+        if (radius <= 0){
+            System.err.println("Invalid Value: " + radius);
+            System.exit(1);
+        }
+
+        this.radius = radius;
+    }
+
+    public double calcArea(){
+        return  radius * radius * PI;
+    }
+
+
+    public double calcPerimeter(){
+        return 2 * radius * PI;
+    }
+
+
+    public String toString() {
+        return "Circle{" +
+                "radius=" + getRadius() +
+                " area=" + calcArea() +
+                " perimeter=" + calcPerimeter() +
+                '}';
+    }
+
+
+}
+/*
+1. Create a class named Circle
+
+        private variables:
+            radius
+
+        public variable:
+            pi
+
+         Encapsulate all the private fields
+
+                 1. radius of the circle can not be zero or negative
+
+         Add a constructor that can set the radius of circle when circle object is created
+                 (If the arguments not valid it should not be set to the instances)
+
+         Methods:
+             calcArea()
+             calcPerimeter()
+             toString(): displays the radius, area and perimeter of the circle when the circle object is passed in the print statement
+ */
