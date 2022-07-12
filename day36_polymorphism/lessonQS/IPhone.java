@@ -1,15 +1,14 @@
-package day30_inheritance.lessonQS.phoneTask;
+package day36_polymorphism.lessonQS;
 
 import java.util.Arrays;
 
-public class Phone {
-
+public class IPhone {
 
     private String brand,model,size,color;
     private double price;
 
     // Constructor
-    public Phone(String brand, String model, String size, String color, double price) { // 5 parameters
+    public IPhone(String brand, String model, String size, String color, double price) { // 5 parameters
         setBrand(brand);
         setModel(model);
         setSize(size);
@@ -90,41 +89,33 @@ public class Phone {
                 '}';
     }
 
+    // it should be same model and color
+
+
+    @Override
+    public boolean equals(Object obj) {
+
+        if ( !(obj instanceof IPhone)){ // if the given object is not IPhone
+            System.err.println("Invalid object, Object must be Iphone");
+            System.exit(1);
+        }
+        //  current              given
+        if (model.equals(  ( (IPhone)obj  ).model)    ){ // if the model of the Iphone is equal to the given Iphone´model
+
+         /* you can add also this condition:
+            if (color.equals( ((IPhone) obj).color  )){ // if the color of Iphone is equal to the given Iphone´s color
+                return true;
+            }
+
+          */
+
+            return true;
+        }
+
+        return false;
+
+    }
+
 
 
 }
-/*
-
-Warmup tasks:
-	1. Create a named Phone:
-				Variables:
-					brand, model, size, price, color
-
-				Encapsulate all the fields
-					Conditions:
-						1. price can not be zero or negative
-						2. color can only be set to:
-								{"Black", "White", "Silver", "Gold", "Pink"}
-
-				Add a constructor that can set all the fields
-
-				Methods:
-					call(long phoneNumber)
-					text(long phoneNumber)
-					toString()
-
-	2. Create the following subclasses of Phone:
-
-			2.1 Iphone:
-					Extra methods:
-						faceTime(phoneNumber)
-						faceTile(email)
-
-			2.2 Samsung:
-					Extra methods:
-						freeze()
-
-			2.3 Nokia:
-					Extra methods:
-						selfDefense()
- */
