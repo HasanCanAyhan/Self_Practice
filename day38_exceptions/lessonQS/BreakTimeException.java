@@ -1,4 +1,4 @@
-package day38_exceptions;
+package day38_exceptions.lessonQS;
 
 public class BreakTimeException extends RuntimeException{ // unchecked , i-con different
 

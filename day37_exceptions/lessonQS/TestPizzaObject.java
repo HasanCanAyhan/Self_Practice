@@ -1,7 +1,5 @@
-package day37_exceptions;
+package day37_exceptions.lessonQS;
 
-
-import day36_polymorphism.lessonQS.Circle;
 
 public class TestPizzaObject {
 

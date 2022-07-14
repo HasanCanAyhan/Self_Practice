@@ -1,4 +1,4 @@
-package day38_exceptions;
+package day38_exceptions.lessonQS;
 
 class CustomCheckedException extends Exception{ // checked
 

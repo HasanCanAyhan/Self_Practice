@@ -1,4 +1,4 @@
-package day37_exceptions;
+package day37_exceptions.lessonQS;
 
 import day35_polymorphism.lessonQS.transportationTask.Car;
 

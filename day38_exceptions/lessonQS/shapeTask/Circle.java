@@ -1,4 +1,4 @@
-package day38_exceptions.shapeTask;
+package day38_exceptions.lessonQS.shapeTask;
 
 public class Circle { // we will implement our own CustomException : InvalidShapeException
 
